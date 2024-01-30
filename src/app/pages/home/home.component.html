@@ -1,0 +1,53 @@
+<section class="featured-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+                <h2 class="text-white">Featured Post</h2>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum cum est sequi ut, ratione sed perspiciatis facilis minus earum, consequatur ullam consectetur blanditiis quibusdam. Exercitationem nam debitis molestiae officiis dolore incidunt asperiores recusandae repudiandae. Atque recusandae qui saepe, obcaecati, rem fuga molestiae tempora consequuntur hic, dolore natus nulla impedit ratione?</p>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-3" *ngFor="let f of posts" >
+                    <app-post-card [post_data]="f"></app-post-card>
+                </div>
+                <!-- <div class="col-lg-3">
+                    <app-post-card></app-post-card>
+                </div>
+                <div class="col-lg-3">
+                    <app-post-card></app-post-card>
+                </div>
+                <div class="col-lg-3">
+                    <app-post-card></app-post-card>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5">
+    <div class="col-md-12 text-center">
+        <h2>Latest Post</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laudantium excepturi dignissimos voluptatem magnam quisquam, aperiam voluptates eos possimus eius, omnis laborum tempora quasi, enim obcaecati? Ex animi ad sunt!</p>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4 mt-3" *ngFor="let l of latest_posts">
+            <app-post-card [post_data]="l"></app-post-card>
+        </div>
+        <!-- <div class="col-md-4 mt-3">
+            <app-post-card></app-post-card>
+        </div>
+        <div class="col-md-4 mt-3">
+            <app-post-card></app-post-card>
+        </div>
+        <div class="col-md-4 mt-3">
+            <app-post-card></app-post-card>
+        </div>
+        <div class="col-md-4 mt-3">
+            <app-post-card></app-post-card>
+        </div>
+        <div class="col-md-4 mt-3">
+            <app-post-card></app-post-card>
+        </div> -->
+    </div>
+</section>

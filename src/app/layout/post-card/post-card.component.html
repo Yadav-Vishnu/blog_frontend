@@ -1,0 +1,17 @@
+<div *ngIf ='post_data'>
+    <div class="card"  [routerLink]="['/post',post_data.id]">
+        <img src="{{post_data.data.postImgPath}}" alt="burger-photo" class="card-img-top">
+        <div class="card-body">
+            <small class="bg-light text-denger text-center">{{post_data.data.catogory.category}}</small>
+            <small class="bg-light text-success text-center ml-3">Featured</small>
+            <small class="bg-light text-info text-center ml-3">Views {{post_data.data.view}}</small>
+    
+            <h5 class="mt-1">{{post_data.data.title}} </h5>
+            <p> {{post_data.data.excert}}</p>
+            <small class="bg-light text-warning text-center ml-3">Last updated {{post_data.data.created.toMillis()| date}}</small>
+    
+    
+        </div>
+    </div>
+</div>
+
